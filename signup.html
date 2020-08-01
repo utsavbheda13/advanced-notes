@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>Create Account</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <form action="" method="post">
-        <label for="username">Username : </label></br>
-        <input type="text" name="username" id="username"><br/>
-        <label for="password">Password : </label><br/>
-        <input type="password" name="password" id="password"><br/>
-        <label for="confirm_password">Confirm Password : </label><br/>
-        <input type="password" name="confirm_password" id="confirm_password"><br/>
-        <button type="submit">Sign Up</button><br/>
-    </form>
+    <header>
+        <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
+        <nav id="navbar">
+            <a href="login.html">Login</a> | 
+            <a href="signup.html">Sign Up</a> | 
+            <a href="note.html">Add Note</a> | 
+            <a href="reminder.html">Add Reminder</a> | 
+            <a href="log_expenses.html">Expense</a>
+        </nav>
+    </header>
+    <div class="signup-page">
+        <div class="myform">
+            <form action="" method="post">
+                <label for="username">Username : </label></br>
+                <input type="text" name="username" id="username"><br/>
+                <label for="password">Password : </label><br/>
+                <input type="password" name="password" id="password"><br/>
+                <label for="confirm_password" id="cpass">Confirm Password : </label><br/>
+                <input type="password" name="confirm_password" id="confirm_password"><br/>
+                <button type="submit" class="button button-block">Create Account</button><br/>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
