@@ -3,16 +3,35 @@
 <head>
     <title>login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <form action="" method="post">
-        <label for="username">Username : </label></br>
-        <input type="text" name="username" id="username"><br/>
-        <label for="password">Password : </label><br/>
-        <input type="password" name="password" id="password"><br/>
-        <button type="submit">Log In</button><br/>
-        <a href="reset.html">Forgot Password ?</a><br/>
-        <a href="signup.html">Create New Account</a>
-    </form>
+    <header>
+        <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
+        <nav id="navbar">
+            <a href="login.html">Login</a> | 
+            <a href="signup.html">Sign Up</a> | 
+            <a href="note.html">Add Note</a> | 
+            <a href="reminder.html">Add Reminder</a> | 
+            <a href="log_expenses.html">Expense</a>
+        </nav>
+    </header>
+    <div class="login-page">
+        <div class="myform">
+            <form class="form" action="" method="post">
+                <div id="uname">
+                    <label for="username">Username : </label></br>
+                    <input type="text" name="username" id="username"><br/>    
+                </div>
+                <div id="pass">
+                    <label for="password">Password : </label><br/>
+                    <input type="password" name="password" id="password"><br/>
+                </div>
+                <button type="submit" class="button button-block">Login</button><br/>
+                <p class="forgot"><a href="reset.html">Forgot Password ?</a></p><br>
+                <a id="createacc" href="signup.html">Create Account</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
