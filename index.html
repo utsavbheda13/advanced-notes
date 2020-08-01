@@ -1,23 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>index</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-<body>
-    <a href="#default"><h1><b>Advanced Notes</b></h1></a>
-    
+<! DOCTYPE html>
+    <html>
 
-    <br>
-    <br>
-    <nav>
-        <a href="login.html">Login</a> | 
-        <a href="signup.html">Sign Up</a> | 
-        <a href="reset.html">Forgot Password?</a> | 
-        <a href="change_password.html">Change Password</a> | 
-        <a href="note.html">Add Note</a> | 
-        <a href="reminder.html">Add Reminder</a> | 
-        <a href="log_expenses.html">Expense</a>
-    </nav><br>
-</body>
-</html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
+            <nav>
+                <a href="login.html">Login</a> | 
+                <a href="signup.html">Sign Up</a> | 
+                <a href="reset.html">Forgot Password?</a> | 
+                <a href="change_password.html">Change Password</a> | 
+                <a href="note.html">Add Note</a> | 
+                <a href="reminder.html">Add Reminder</a> | 
+                <a href="log_expenses.html">Expense</a>
+            </nav>
+        </header>
+        <div class='calendar'>
+            <div class='day'></div>
+            <div class='month'>
+                <div class='month-name'></div>
+            </div>
+            <div class='number'></div>
+        </div>
+        <div class='contain'>
+            <div class='caltwo'>
+                <div class='daytwo'></div>
+                <div class='monthtwo'></div>
+                <div class='numtwo'></div>
+            </div>
+            <div class='clock'>
+                <div class='hour time'></div>
+                <div class='min time'></div>
+                <div class='sec time'></div>
+            </div>
+        </div>
+        <div class='meter'>
+            <div class='hours timer'></div>
+            <div class='minutes timer'></div>
+            <div class='seconds timer'></div>
+        </div>
+    </body>
+
+    </html>
