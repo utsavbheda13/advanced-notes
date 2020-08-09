@@ -1,0 +1,91 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+    background: #9fbfdf ;
+    font-family : 'Titillium Web', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#projectname {
+  font-weight: bold;
+  color: #13232f;
+  text-decoration: none
+}
+
+#navbar {
+  margin-top: 40px;
+}
+
+#navbar a{
+  font-weight: bold;
+  color: #13232f;
+  text-decoration: none
+}
+
+#same-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-wrap{
+    width: 500px;
+  padding: 8% 0 0;
+  margin: 0;
+}
+
+#store-note{
+    max-width: 360px;
+    width: 500px;
+    margin : 8% auto 100px;
+    padding: 1% 0 1%;
+    background-color: #13232f;
+    max-height: 360px;
+    overflow: scroll;
+}
+
+.myform {
+    position: relative;
+    z-index: 1;
+    background: #13232f;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+#btns{
+    display: flex;
+  justify-content: space-between;
+}
+
+  .button {
+    border:0;
+    outline:none;
+    border-radius:0;
+    padding:15px 0;
+    margin-left: 0px;
+    font-size:1rem;
+    font-weight: 600 ;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    background: #4080bf;
+    color: white;
+    transition:all.5s ease;
+    -webkit-appearance: none;
+    width:25%;
+  }
+  
+  p{
+      color: black;
+      background-color: white;
+      margin: 1% 2% 1% 2%;
+      border-style: groove;
+      padding: auto;
+  }
