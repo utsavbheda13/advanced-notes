@@ -3,12 +3,38 @@
 <head>
     <title>Note</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/note.css">
+    <script src="js/note.js"></script>
 </head>
 <body>
-    <form action="" method="post">
-        <textarea name="note" id="note" cols="30" rows="10" placeholder="Add Note..."></textarea><br/>
-        <button type="submit">Save</button><br/>
-        <button type="reset">Clear</button>
-    </form>
+    <header>
+        <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
+        <nav id="navbar">
+            <a href="login.html">Login</a> | 
+            <a href="signup.html">Sign Up</a> | 
+            <a href="note.html">Add Note</a> | 
+            <a href="reminder.html">Add Reminder</a> | 
+            <a href="log_expenses.html">Expense</a>
+        </nav>
+    </header>
+    <div id="same-line">
+        <div id="page-wrap">
+            <div class="myform">
+                <form id="form1" action="" method="post" onsubmit="saveNote(); return false;">
+                    <textarea name="note" id="note" cols="30" rows="10" placeholder="Add Note..."></textarea><br/>
+                    <div class="btns">
+                        <button type="submit" class="button">Save</button>&nbsp;
+                    <button type="reset" class="button">Clear</button>    
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div id="store-note">
+    
+        </div>
+    </div>
+    
+    
 </body>
 </html>
