@@ -3,29 +3,11 @@
   }
 
 body {
-    background: #9fbfdf ;
+    background: teal ;
     font-family : 'Titillium Web', sans-serif;
 }
-
-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-#projectname {
-    font-weight: bold;
-    color: #13232f;
-    text-decoration: none
-}
-
-#navbar {
-    margin-top: 40px;
-}
-
-#navbar a{
-    font-weight: bold;
-    color: #13232f;
-    text-decoration: none
+.bg-mint{
+  background-color: #DDFFE7
 }
 
 .signup-page {
@@ -36,7 +18,7 @@ header{
 .myform {
   position: relative;
   z-index: 1;
-  background: #13232f;
+  background: #DDFFE7;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -46,7 +28,7 @@ header{
 
   a {
     text-decoration:none;
-    color: #9fbfdf;
+    color: teal;
     transition:.5s ease;
   }
 
@@ -62,7 +44,7 @@ label {
   transform:translateY(6px);
   font-weight: bold;
   left:-75px;
-  color: #9fbfdf ;
+  color: teal ;
   transition:all 0.25s ease;
   pointer-events: none;
   font-size:22px;
@@ -91,7 +73,7 @@ input {
   background:none;
   background-image:none;
   border:1px solid #a0b3b0;
-  color: white;
+  color: black;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
 }
@@ -104,8 +86,8 @@ input {
     font-weight: 600 ;
     text-transform:uppercase;
     letter-spacing:.1em;
-    background: #4080bf;
-    color: white;
+    background: teal;
+    color: #DDFFE7;
     transition:all.5s ease;
     -webkit-appearance: none;
   }
