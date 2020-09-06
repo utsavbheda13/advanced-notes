@@ -11,7 +11,7 @@ body {
   background-color: #DDFFE7
 }
 
-.login-page {
+.log-expense {
   width: 500px;
   padding: 8% 0 0;
   margin: auto;
@@ -26,12 +26,6 @@ body {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
-  a {
-    text-decoration:none;
-    color: teal;
-    transition:.5s ease;
-  }
 
 .container {
   position: relative;
@@ -79,6 +73,7 @@ input {
     outline:none;
     border-radius:0;
     padding:15px 0;
+    margin: auto;
     font-size:2rem;
     font-weight: 600 ;
     text-transform:uppercase;
@@ -91,24 +86,5 @@ input {
   
   .button-block {
     display:block;
-    width:100%;
+    width:75%;
   }
-.forgot {
-    margin-top: 0px;
-    text-align:right;
-  }
-
-#createacc{
-  border:0;
-    outline:none;
-    border-radius:0;
-    padding:15px 15px;
-    font-size:1rem;
-    font-weight: 600 ;
-    text-transform:uppercase;
-    letter-spacing:.1em;
-    background: teal;
-    color: #DDFFE7;
-    transition:all.5s ease;
-    -webkit-appearance: none;
-}

@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Note</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/note.css">
-    <script src="js/note.js"></script>
+
 </head>
+
 <body>
     <header>
-        <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-mint">
+            <a class="navbar-brand" href="index.html">Advance Notes App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="note.html"><img src="images/journal-text.svg" height="15px" width="15px"> Note</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reminder.html"><img src="images/calendar2-range.svg" height="15px" width="15px"> Reminder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log_expenses.html"><img src="images/wallet.svg" height="15px" width="15px"> Expense</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><img src="images/person-circle.svg" height="15px" width="15px"> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html"><img src="images/person-plus-fill.svg" height="15px" width="15px"> Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <a id="projectname" href="index.html"><h1><b>Advanced Notes</b></h1></a>
         <nav id="navbar">
             <a href="login.html">Login</a> | 
             <a href="signup.html">Sign Up</a> | 
             <a href="note.html">Add Note</a> | 
             <a href="reminder.html">Add Reminder</a> | 
             <a href="log_expenses.html">Expense</a>
-        </nav>
+        </nav> -->
     </header>
-    <div id="same-line">
+    <!-- <div id="same-line">
         <div id="page-wrap">
             <div class="myform">
                 <form id="form1" action="" method="post" onsubmit="saveNote(); return false;">
@@ -33,8 +66,56 @@
         <div id="store-note">
     
         </div>
+    </div> -->
+    <center>
+        <button type="button" class="btn bg-mint" data-toggle="modal" data-target="#exampleModal" id="addNote">
+    <img src="images/plus.svg" height="50px" width="50px" > Add Note
+  </button>
+    </center>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <input class="modal-title" id="exampleModalLabel" type="text" placeholder="Add Title"></input>
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <textarea></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="saveNote" onsubmit="addNote()">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" id="card1">
+                <div class="card bg-mint mb-5" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Test Title</h5>
+                        <p class="card-text">Dynamity of cards will be added later using javascript. Right now i am facing some issues. Right now only delete is working.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary" id="deleteNote" onclick="delNote()">Delete</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="js/note.js"></script>
 </body>
+
 </html>

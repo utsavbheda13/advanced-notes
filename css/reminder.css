@@ -11,7 +11,28 @@ body {
   background-color: #DDFFE7
 }
 
-.login-page {
+/* header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#projectname {
+  font-weight: bold;
+  color: #13232f;
+  text-decoration: none
+}
+
+#navbar {
+  margin-top: 40px;
+}
+
+#navbar a{
+  font-weight: bold;
+  color: #13232f;
+  text-decoration: none
+} */
+
+.reminder {
   width: 500px;
   padding: 8% 0 0;
   margin: auto;
@@ -19,12 +40,17 @@ body {
 .myform {
   position: relative;
   z-index: 1;
-  background: #DDFFE7;
+  background: #ddffe7;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.event-type{
+    color: #ffffff;
+    /* text-align: left; */
 }
 
   a {
@@ -73,18 +99,26 @@ input {
   color: black;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
+  /* &:checked {
+    ~ .radio {
+      background-color: #0ac07d;
+      transition: background .3s;
+      &::after {
+        opacity: 1;
+      }
+    } */
 }
 .button {
     border:0;
     outline:none;
     border-radius:0;
     padding:15px 0;
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight: 600 ;
     text-transform:uppercase;
     letter-spacing:.1em;
     background: teal;
-    color: #DDFFE7;
+    color: #ddffe7;
     transition:all.5s ease;
     -webkit-appearance: none;
   }
@@ -93,22 +127,4 @@ input {
     display:block;
     width:100%;
   }
-.forgot {
-    margin-top: 0px;
-    text-align:right;
-  }
 
-#createacc{
-  border:0;
-    outline:none;
-    border-radius:0;
-    padding:15px 15px;
-    font-size:1rem;
-    font-weight: 600 ;
-    text-transform:uppercase;
-    letter-spacing:.1em;
-    background: teal;
-    color: #DDFFE7;
-    transition:all.5s ease;
-    -webkit-appearance: none;
-}
