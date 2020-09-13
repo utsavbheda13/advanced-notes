@@ -46,47 +46,57 @@
                 </ul>
             </div>
         </nav>
-        <!-- <a id="projectname" href="index.html">
-            <h1><b>Advanced Notes</b></h1>
-        </a>
-        <nav id="navbar">
-            <a href="login.html">Login</a> |
-            <a href="signup.html">Sign Up</a> |
-            <a href="note.html">Add Note</a> |
-            <a href="reminder.html">Add Reminder</a> |
-            <a href="log_expenses.html">Expense</a>
-        </nav> -->
     </header>
+    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px; float: right; min-width: 300px;">
+        <div class="toast" style="position: absolute; top: 0; right: 0;" data-delay="5000">
+          <div class="toast-header">
+            <img src="images/alarm.svg" class="rounded mr-2" alt="">
+            <strong class="mr-auto" id="heading"></strong>
+            <small id="mutemsg">just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body" id="bcontent">
+            
+          </div>
+        </div>
+      </div>
     <div class="reminder">
         <div class="myform">
             <form action="" method="post">
                 <div class="event-type">
-                    <input type="radio" id="birthday" name="reminder" value="birthday">
-                    <span class="radio"></span>
-                    <label for="birthday">Birth Day</label><br>
-                    <input type="radio" id="meeting" name="reminder" value="meeting">
-                    <span class="radio"></span>
-                    <label for="meeting">Meeting</label><br>
-                    <input type="radio" id="event" name="reminder" value="event">
-                    <span class="radio"></span>
-                    <label for="event">Event</label><br>
-                    <input type="radio" id="other" name="reminder" value="other">
-                    <span class="radio"></span>
-                    <label for="other">Other</label><br><br>
+                    
+                    <span class="radio">
+                        <input type="radio" id="birthday" name="reminder" value="Birthday" checked>
+                        <label for="birthday" id="radio_lbl">Birth Day</label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" id="meeting" name="reminder" value="Meeting">
+                    <label for="meeting" id="radio_lbl">Meeting</label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" id="event" name="reminder" value="Event">
+                    <label for="event" id="radio_lbl">Event</label>
+                    </span>
+                    <span class="radio">
+                        <input type="radio" id="other" name="reminder" value="Other">
+                        <label for="other" id="radio_lbl">Other</label>
+                    </span>
+                    <br><br>
                 </div>
                 <label for="reminder_date">Select Date: </label>
-                <input type="date" name="reminder_date" id="reminder_date"><br />
+                <input type="date" name="reminder_date" id="reminder_date" required><br />
                 <label for="reminder_time">Select Time: </label>
-                <input type="time" name="reminder_time" id="reminder_time"><br />
-                <button type="submit" class="button button-block">Set Reminder</button><br />
+                <input type="time" name="reminder_time" id="reminder_time" required><br />
+                <button type="button" class="button button-block" id="SetReminder">Set Reminder</button><br />
             </form>
         </div>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
-
+    <script src="js/reminder.js"></script>
 </body>
 
 </html>
